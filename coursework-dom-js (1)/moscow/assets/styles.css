@@ -1,0 +1,51 @@
+/* Общие цвета, шрифт и ширина страницы */
+body {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial;
+  line-height: 1.6;
+  color: #26372f;
+  background-color: #f8f9f5;
+}
+a { color: #285748; }
+h2 { margin-top: 30px; }
+
+/* Меню и текущая страница */
+.menu {
+  padding: 15px;
+  background-color: #eaf0e5;
+}
+.menu a { margin-right: 15px; padding: 8px; }
+.active {
+  font-weight: bold;
+  background-color: #285748;
+  color: white;
+  text-decoration: none;
+}
+
+.active img { background-color: white; }
+
+/* Фотографии */
+img { vertical-align: middle; }
+.photo { max-width: 100%; }
+
+/* Таблица */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #c9d6ca;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Формы */
+form {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #c9d6ca;
+}
+input { padding: 5px; }

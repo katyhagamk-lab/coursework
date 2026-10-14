@@ -1,0 +1,38 @@
+/* Общий вид страниц */
+body {
+  max-width: 950px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial;
+  line-height: 1.6;
+  color: #26372f;
+  background-color: #f8f9f5;
+}
+a { color: #285748; }
+h1 { font-size: 28px; }
+.menu { padding: 15px; background-color: #eaf0e5; }
+.menu a { display: inline-block; padding: 8px; }
+.active { background-color: #285748; color: white; font-weight: bold; }
+
+/* Две страницы учебного паспорта */
+.passport {
+  width: 100%;
+  max-width: 650px;
+  border-collapse: collapse;
+  background-color: #f5e7e4;
+}
+.passport td { padding: 20px; border: 1px solid #b9a09a; }
+.passport h2 { text-align: center; }
+.passport p { margin: 8px 0; }
+.sample { color: #865e54; font-size: 13px; }
+.hint { margin-top: 12px; font-size: 14px; }
+
+/* Кнопки, поля, результаты */
+button { padding: 10px 15px; background-color: #285748; color: white; border: 0; font: inherit; cursor: pointer; }
+input { padding: 6px; }
+pre { padding: 15px; background-color: white; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+
+/* Крупная фотография: края скрываются внутри рамки */
+.passport-photo { width: 200px; height: 270px; overflow: hidden; }
+.passport-photo img { width: 300px; height: 400px; margin-left: -50px; margin-top: -100px; }

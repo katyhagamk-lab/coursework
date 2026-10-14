@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Изменяем кириллицу на латиницу по клику</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html">Главная</a>
+    <a href="dom.html">Считываем DOM</a>
+    <a href="passport.html" class="active">Кириллица и латиница</a>
+    <a href="algorithm.html">Задача 1008</a>
+    <a href="moscow/index.html" target="_blank">Сайт о Москве ↗</a>
+  </div>
+  <h1>Изменяем кириллицу на латиницу по клику</h1>
+  <!-- Первые два абзаца относятся ко второй странице паспорта. -->
+  <table class="passport">
+    <tr>
+      <td colspan="2">
+        <div class="sample">СТРАНИЦА 2</div>
+        <h2>Российская Федерация</h2>
+        <p>Паспорт выдан: <span>Отделом МВД России по городу Москве</span></p>
+        <p>Дата выдачи: <span>15.06.2023</span></p>
+        <div>Код подразделения: 000-000</div>
+        <div>Серия и номер: 0000 000000</div>
+      </td>
+    </tr>
+    <tr>
+      <td><div class="passport-photo"><img src="assets/portrait.jpg" width="300" height="400" alt="Фотография Екатерины Гамкрелидзе"></div></td>
+      <td>
+        <div class="sample">СТРАНИЦА 3</div>
+      
+        <p>Фамилия: <span id="surname">Гамкрелидзе</span></p>
+        <p>Имя: <span id="first_name">Екатерина</span></p>
+        <p>Отчество: <span>Тенгизовна</span></p>
+        <p>Год рождения: <span id="birth_year">2006</span></p>
+        <p>Пол: <span>Женский</span></p>
+        <p>Место рождения: <span>Город Москва</span></p>
+      </td>
+    </tr>
+  </table>
+  <p><button id="change">Изменить на латиницу</button></p>
+
+  <script src="assets/passport.js"></script>
+</body>
+</html>

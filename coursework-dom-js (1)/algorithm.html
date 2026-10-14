@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Решение алгоритмической задачи</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="menu">
+    <a href="index.html">Главная</a>
+    <a href="dom.html">Считываем DOM</a>
+    <a href="passport.html">Кириллица и латиница</a>
+    <a href="algorithm.html" class="active">Задача 1008</a>
+    <a href="moscow/index.html" target="_blank">Сайт о Москве ↗</a>
+  </div>
+  <h1>Решение алгоритмической задачи</h1>
+  <h2>Задача 1008</h2>
+  <p>Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью объёма M первую ёмкость, вторую, обе.</p>
+  <p>Все длины вводятся в метрах, объём жидкости — в кубических метрах (м³).</p>
+  <form id="task_form">
+    <p><label>Ребро куба A: <input id="a" name="cube_edge" type="number" step="any" min="0" value="2" required></label></p>
+    <p><label>Высота цилиндра H: <input id="h" name="cylinder_height" type="number" step="any" min="0" value="3" required></label></p>
+    <p><label>Радиус основания R: <input id="r" name="cylinder_radius" type="number" step="any" min="0" value="1" required></label></p>
+    <p><label>Объём жидкости M: <input id="m" name="liquid_volume" type="number" step="any" min="0" value="20" required></label></p>
+    <button id="solve" type="button">Решить задачу</button>
+  </form>
+  <h2>Результат</h2>
+  <pre id="result">Введите данные и нажмите «Решить задачу».</pre>
+  <script src="assets/algorithm.js"></script>
+</body>
+</html>
